@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { MotionButton } from "./button";
+import ebookImg from "../assets/ebook.png"
 
 export function AboutBook({ paymentLink }: { paymentLink: string }) {
     return (
@@ -9,7 +10,7 @@ export function AboutBook({ paymentLink }: { paymentLink: string }) {
         >
             {/* Imagem flutuante de fundo */}
             <motion.img
-                src="/assets/ebook.png"
+                src={ebookImg}
                 alt="Capa do Livro"
                 className="absolute left-4 top-16 w-[30%] max-w-md -rotate-12 opacity-20 blur-sm"
                 initial={{ opacity: 0, x: -100 }}
@@ -19,7 +20,7 @@ export function AboutBook({ paymentLink }: { paymentLink: string }) {
 
             {/* Imagem principal do livro */}
             <motion.img
-                src="/assets/ebook.png"
+                src={ebookImg}
                 alt="Capa do Livro"
                 className="w-48 h-72 rounded-lg shadow-2xl relative z-10 mb-8"
                 initial={{ opacity: 0, y: -50 }}

@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { MotionButton } from "./button";
+import ebookImg from "../assets/ebook.png"
 
 export function HeroSection({ paymentLink }: { paymentLink: string }) {
     return (
@@ -9,7 +10,7 @@ export function HeroSection({ paymentLink }: { paymentLink: string }) {
         >
             {/* Imagem do livro em diagonal de fundo */}
             <motion.img
-                src="/assets/ebook.png"
+                src={ebookImg}
                 alt="Capa do Livro"
                 className="absolute right-4 bottom-0 w-[32%] max-w-2xl rotate-12 opacity-30 blur-sm"
                 initial={{ opacity: 0, x: 150 }}

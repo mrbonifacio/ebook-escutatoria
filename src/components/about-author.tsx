@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import authorsImg from "../assets/authors.jpg"
 
 export function AboutAuthor() {
     return (
@@ -8,7 +9,7 @@ export function AboutAuthor() {
         >
             {/* Imagem dos autores */}
             <motion.img
-                src="./assets/authors.jpg"
+                src={authorsImg}
                 alt="Foto dos autores"
                 className="w-48 h-32 sm:w-72 sm:h-52 rounded-xl shadow-2xl relative z-10 mb-6"
                 initial={{ opacity: 0, y: -50 }}
