@@ -5,7 +5,7 @@ import { AboutAuthor } from "./components/about-author";
 import { NavBar } from "./components/nav-bar";
 
 export function App() {
-  const paymentLink = "https://mpago.la/21GZtsJ"; // Link de pagamento
+  const paymentLink = "https://mpago.la/1fsCwgh"; // Link de pagamento
   const sections = ["hero", "sobre", "autor"];
   const [activeSection, setActiveSection] = useState("");
 
