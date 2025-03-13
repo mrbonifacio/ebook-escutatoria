@@ -80,6 +80,30 @@ export function AboutBook({ paymentLink }: { paymentLink: string }) {
             >
                 <MotionButton href={paymentLink}>Garanta seu Ebook Agora!</MotionButton>
             </motion.div>
+
+            <motion.div
+                initial={{ opacity: 0, y: 50 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1, delay: 0.9, ease: "easeOut" }}
+                className="mt-16 relative z-10 text-center"
+            >
+                <h2 className="text-3xl font-bold mb-4">Entre em Contato</h2>
+                <p className="text-lg mb-4">Tem dúvidas? Fale conosco!</p>
+                <a
+                    href="mailto:aurvimpartners@gmail.com"
+                    className="text-cyan-400 hover:underline block mb-2"
+                >
+                    aurvimpartners@gmail.com
+                </a>
+                <a
+                    href="https://wa.me/5516988514453"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-cyan-400 hover:underline"
+                >
+                    +55 16 98851-4453
+                </a>
+            </motion.div>
         </section>
     );
 }

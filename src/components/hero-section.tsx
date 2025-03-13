@@ -8,6 +8,28 @@ export function HeroSection({ paymentLink }: { paymentLink: string }) {
             id="hero"
             className="w-full min-h-screen flex flex-col items-center justify-center text-center bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-700 text-white relative overflow-hidden px-6"
         >
+            <motion.div
+                initial={{ opacity: 0, y: -50 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1, ease: "easeOut" }}
+                className="absolute top-4 left-6 flex items-center space-x-8 text-base"
+            >
+                <a
+                    href="mailto:aurvimpartners@gmail.com"
+                    className="text-white font-semibold hover:underline"
+                >
+                    aurvimpartners@gmail.com
+                </a>
+                <a
+                    href="https://wa.me/5516988514453"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-white font-semibold hover:underline"
+                >
+                    +55 16 98851-4453
+                </a>
+            </motion.div>
+
             {/* Imagem do livro em diagonal de fundo */}
             <motion.img
                 src={ebookImg}
